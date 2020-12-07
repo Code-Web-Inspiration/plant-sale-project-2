@@ -1,5 +1,6 @@
 .banner-info {
-    height: 40vh;
+    position: absolute;
+    transform: translateY(-50%); 
 }
 
 .banner-info .web-site-container {
@@ -8,28 +9,31 @@
 }
 
 .banner-info .web-site-wrap {
-    flex-flow: row wrap;
-    align-items: stretch;
-    justify-content: space-around;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background-color: var(--white-color);
 }
 
 .card {
-    width: 25%;
+    width: 100%;
     display: flex;
-    flex-flow: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 40px 0;
+}
 
+.card:nth-child(2) {
+    border-left: 1px solid var(--bg-color);
+    border-right: 1px solid var(--bg-color);
 }
 
 .card-img-box {
     width: 70px;
     height: 70px;
+    margin-right: 1rem;
 }
 
 .banner-info-card-img {
