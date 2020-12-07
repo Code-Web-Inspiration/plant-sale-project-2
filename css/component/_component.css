@@ -73,12 +73,45 @@
 
 
 
+/* === SOCIAL NETWORK === */
+.web-site-social-network-link:link,
+.web-site-social-network-link:active {
+    padding: .5em 1em;
+    font-weight: 700;
+    font-size: .8em;
+    color: var(--bg-color);
+    text-transform: uppercase;
+    transition: var(--trans-03);
+}
+.face:hover, 
+.face:active,
+.insta:hover, 
+.insta:active,
+.link:hover, 
+.link:active
+{
+    letter-spacing: 1px;
+}
+.face:hover,
+.face:active {
+    background-color: rgb(66,103,178);
+}
+.insta:hover,
+.insta:active {
+    background: linear-gradient(to right bottom, rgb(64,93,230), rgb(88,81,219), rgb(131,58,180), rgb(193,53,132), rgb(225,48,108), rgb(253,29,29), rgb(245,96,64), rgb(247,119,55), rgb(252,175,69), rgb(255,220,128));
+}
+.link:hover,
+.link:active {
+    background-color: rgb(40,103,178);
+}
+
+
 
 /* === LOGO === */
 .web-site-logo {
     position: relative;
-    height: 100px;
-    width: 150px;
+    height: 80px;
+    width: 130px;
 }
 
 

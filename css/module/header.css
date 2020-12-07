@@ -1,11 +1,29 @@
 .header {
-    min-height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .6), rgba(0, 0, 0, 1)), 
-    url('../image/bg.jpg') center center / cover no-repeat;
+    min-height: 100vh; 
+    background-color: var(--bg-color);
+}
+
+.header .header-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px 0;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "top-nav-bar"
+    "nav-bar"
+    ;
+    background-color: rgba(0, 0, 0, .8);
+
+    z-index: 1000;
 }
 
 .header .web-site-wrap {
-    padding: 2rem 0;
     flex-flow: row wrap;
     align-items: center;
 }
@@ -14,8 +32,49 @@
     z-index: 1000;
 }
 
+
+/* === TOP NAV BAR === */
+.header-top .web-site-wrap:first-child {
+    grid-area: top-nav-bar;
+    padding: 1rem 0;
+    justify-content: flex-end;
+}
+
+.vertical-bar {
+    display: block;
+    width: 2px;
+    height: 30px;
+    margin: 0 5px;
+    background-color: var(--green-color);
+}
+
+.contact-link:link {
+    padding: .5em 1em;
+    border-radius: 20px;
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--white-color);
+    transition: var(--trans-03);
+}
+.contact-link:hover,
+.contact-link:active,
+.contact-link.is-active {
+    letter-spacing: 1px;
+    background-color: var(--green-color);
+}
+
+
+/* === HEADER NAV BAR === */
+.header-top .web-site-wrap:last-child {
+    grid-area: nav-bar;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto;
+}
+
 .header-nav-bar {
-    margin-left: auto;
+    margin: auto;
 }
 
 .header-nav-list {
@@ -24,21 +83,42 @@
     align-items: center;
 }
 
-.header-nav-item:last-child .header-nav-link {
-    padding: .3em 1em;
-    border-radius: 5px;
-    background-color: var(--green-color);
-
+.header-nav-link:link,
+ .header-nav-link:visited{
+    padding: .5em 1.5em;
+    font-family: var(--head-police);
+    font-size: .9em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--green-color);
 }
 
-.header-nav-link {
-    padding: 1em 2em;
-    font-size: 1.1em;
-    font-weight: 600;
-    text-transform: capitalize;
-    color: var(--white-color);
+.user-profil-box {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--white-color);
 }
 
+.settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.setting-btn {
+    padding: .25em;
+    cursor: pointer;
+}
+
+.setting-btn .setting {
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+}
 .menu-button {
     position: absolute;
     top: 50%;
@@ -47,20 +127,66 @@
     display: none;
 }
 
-.header .web-site-wrap:last-child {
+
+/* === HEADER CONTENT === */
+
+.header .header-content-box {
     position: absolute;
     top: 50%;
-    left: 15%;
-    transform: translateY(-50%);
-    width: auto;
-}
-.header-baseline {
-    font-family: var(--head-police);
-    font-size: 6.5em;
-    font-weight: 900;
-    color: var(--white-color);
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding-top: 200px;
 }
 
-.header-baseline span {
-    color: var(--green-color);
+/* .header-content-box .web-site-container {
+    position: relative;
+} */
+
+.header-content-box .web-site-wrap {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
 }
+.header-content-baseline {
+    font-family: var(--head-police);
+    font-size: 60px;
+    color: var(--dark-color);
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.header-content-baseline span {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: var(--green-color);
+    line-height: 1;
+}
+
+.header-see-our-plants-btn {
+    position: relative;
+    padding: .5em 1em;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--green-color);
+    transition: var(--trans-03);
+    z-index: 1000;
+}
+
+.header-content-img-box {
+    width: 80%;
+    margin-left: auto;
+}
+
+
+
+
+
