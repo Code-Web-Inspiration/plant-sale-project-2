@@ -1,0 +1,37 @@
+.best-sellers {
+    margin-bottom: 200px;
+}
+
+.best-sellers-heading {
+    margin-bottom: 40px;
+}
+
+.best-sellers .web-site-wrap {
+    display: grid;
+    grid-template-rows: repeat(1, minmax(400px, auto));
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "article1 article2 article3 article4"
+    ;
+    align-items: center;
+}
+
+.best-sellers .article-card:nth-child(1) {
+    grid-area: article1;
+    background: url('../image/nos_meilleures_ventes/1.jpg') center center / cover no-repeat;
+}
+
+.best-sellers .article-card:nth-child(2) {
+    grid-area: article2;
+    background: url('../image/nos_meilleures_ventes/2.jpg') center center / cover no-repeat;
+}
+
+.best-sellers .article-card:nth-child(3) {
+    grid-area: article3;
+    background: url('../image/nos_meilleures_ventes/3.jpg') center center / cover no-repeat;
+}
+
+.best-sellers .article-card:nth-child(4) {
+    grid-area: article4;
+    background: url('../image/nos_meilleures_ventes/4.jpg') center center / cover no-repeat;
+}

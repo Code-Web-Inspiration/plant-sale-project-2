@@ -1,0 +1,42 @@
+.banner-info {
+    height: 40vh;
+}
+
+.banner-info .web-site-container {
+    position: relative;
+    min-height: 100%;
+}
+
+.banner-info .web-site-wrap {
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-around;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 25%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.card-img-box {
+    width: 70px;
+    height: 70px;
+}
+
+.banner-info-card-img {
+    object-fit: contain;
+}
+
+.card-msg {
+    font-size: 1.3em;
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+/* --- MAIN FILE CSS --- */
+
+/* --- POLICE --- */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Tenor+Sans&display=swap');
+
+/* --- BASE --- */
+@import 'base/_base.css';
+
+/* --- GRID --- */
+@import 'layout/_grid.css';
+
+/* --- COMPONENT --- */
+@import 'component/_component.css';
+
+/* --- MODULE --- */
+@import 'module/header.css';
+@import 'module/banner-info.css';
+@import 'module/best-sellers.css';
+@import 'module/our-plants.css';
+@import 'module/footer.css';
+
+
+/* --- RESPONSIVE --- */
+@import 'responsive-media/_@main.css';

@@ -1,0 +1,71 @@
+/* --- BASE STYLE --- */
+
+:root {
+
+    /* === MARGIN === */
+
+    /* === PADDING === */
+
+    /* === TRANSFORM === */
+
+    /* === FONT SIZE === */
+
+    /* === FONT POLICE === */
+    --head-police: 'Tenor Sans', sans-serif;
+
+    /* === TRANSITION === */
+    --trans-03: .3s ease;
+    --trans-05: .5s ease;
+    --trans-1: 1s ease;
+
+    /* === COLOR === */
+    --web-site-menu-btn-color: var(--dark-color);
+    --dark-color: #111;
+    --white-color: #fff;
+    --green-color: #61b15a;
+
+    /* === LINE HEIGHT === */
+    --l-height: 1;
+
+}
+
+*, *::before, *::after, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    color: var(--dark-color);
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 100px;
+    z-index: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--head-police);
+    line-height: var(--l-height);
+}
+
+ul, li {
+    position: relative;
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

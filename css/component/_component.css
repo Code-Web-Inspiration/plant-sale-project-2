@@ -1,0 +1,161 @@
+/* --- COMPONENT STYLE --- */
+
+
+/* ==== MENU BUTTON ==== */
+.web-site-menu-btn-parent-component,
+.web-site-menu-btn-parent-component {
+    height: auto;
+    width: auto;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+.web-site-menu-open-btn-component {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--web-site-menu-btn-color);
+}
+.web-site-menu-open-btn-component::before {
+    top: -10px;
+    left: 0;
+    width: 100%;
+}
+.web-site-menu-open-btn-component::after {
+    top: 10px;
+    right: 0;
+    width: 80%;
+}
+.web-site-menu-open-btn-component::before,
+.web-site-menu-open-btn-component::after {
+    position: absolute;
+    height: 100%;
+    content: '';
+    background-color: inherit;
+    border-radius: inherit;
+    transition: transform var(--trans-05);
+}
+
+
+/* ==== CLOSE BUTTON ==== */
+.web-site-menu-close-btn-component {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 4px;
+}
+.web-site-menu-close-btn-component::before,
+.web-site-menu-close-btn-component::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    background-color: var(--web-site-menu-btn-color);
+    transform: rotate(45deg);
+    transition: transform var(--trans-05);
+}
+.web-site-menu-close-btn-component::after {
+    transform: rotate(-45deg);
+}
+
+
+
+
+/* === LOGO === */
+.web-site-logo {
+    position: relative;
+    height: 100px;
+    width: 150px;
+}
+
+
+
+/* === SECTION HEADING === */
+.web-site-section-heading-component {
+    font-family: var(--head-police);
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--dark-color);
+    letter-spacing: 2px;
+    line-height: 1;
+}
+.web-site-section-heading-component::after {
+    content: '';
+    display: block;
+    height: 8px;
+    width: 60px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 2.5em;
+    background-color: var(--green-color);
+}
+
+
+
+/* === CARD ARTICLE === */
+.web-site-card-article-component {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.web-site-card-article-footer-component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, .7);
+    z-index: 100;
+}
+
+.web-site-card-article-nane-component {
+    font-size: 1.3em;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.web-site-card-article-price-component {
+    display: block;
+    margin-top: 5px;
+    font-size: .8em;
+    color: var(--green-color);
+}
+
+.web-site-card-article-read-more-component:link,
+.web-site-card-article-read-more-component:visited {
+    padding: .5em 1em;
+    border: 1px solid var(--green-color);
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--white-color);
+    background-color: var(--green-color);
+    transition: var(--trans-05);
+}
+
+.web-site-card-article-read-more-component:hover,
+.best-sellers .article-btn-read-more.is-active {
+    color: var(--dark-color);
+    background-color: transparent;
+}

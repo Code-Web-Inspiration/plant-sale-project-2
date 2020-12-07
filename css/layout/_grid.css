@@ -1,0 +1,14 @@
+/* --- GRID STYLE --- */
+
+.web-site-container {
+    max-width: 1130px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.web-site-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+}

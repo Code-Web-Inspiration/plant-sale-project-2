@@ -1,0 +1,39 @@
+/* === BANNER INFO RESPONSIVE === */
+
+
+@media only screen and (min-width: 375px) and (max-width: 992px) {
+    .card-msg {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    .banner-info {
+        height: 60vh;
+    } 
+}
+
+
+@media only screen and (max-width: 375px) {
+    .banner-info {
+        height: auto;
+    } 
+    .banner-info .web-site-wrap {
+        flex-flow: column wrap;
+        align-items: center;
+        margin: 1em 0;
+
+        position: static;
+        transform: none
+    }
+    .card {
+        width: 100%;
+        height: 200px;
+    }
+    .card-msg {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+}
