@@ -1,6 +1,6 @@
 .header {
     min-height: 100vh; 
-    padding-bottom: calc(100% - 100vh);
+    padding-bottom: calc(110% - 100vh);
     background-color: var(--bg-color);
 }
 
