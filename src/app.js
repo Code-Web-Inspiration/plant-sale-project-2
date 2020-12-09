@@ -2,8 +2,9 @@
 
 // JAVASCRIPT FILE
 
-var navbarSlide = document.querySelector('.header-nav-list')
-// const navbarHeight = navBar.offsetHeight
+const navBar = document.querySelector('#header-top')
+const navbarSlide = document.querySelector('.header-nav-list')
+const navbarHeight = navBar.offsetHeight
 const menuButton = document.querySelector('#menu-button')
 
 const handleScrollY = function () {
@@ -13,11 +14,13 @@ const handleScrollY = function () {
     return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop
 }
 
-// function navbarStiky() {
-//     navBar.classList.toggle('stiky', window.scrollY && handleScrollY() > navbarHeight)
-// }
+function navbarStiky() {
+    navBar.classList.toggle('stiky', window.scrollY && handleScrollY() > navbarHeight)
+}
 
 window.onload = () => {
+
+    window.addEventListener('scroll', ()=> navbarStiky())
     menuButton.addEventListener('click', function () {
 
         console.log(navbarSlide.className)

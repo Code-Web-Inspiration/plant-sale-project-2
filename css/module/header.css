@@ -26,7 +26,8 @@
     "top-nav-bar"
     "nav-bar"
     ;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: var(--dark-color);
+    transition: var(--trans-1);
     z-index: 1000;
 }
 
@@ -151,6 +152,12 @@
 .menu-button {
     margin-left: 1rem;
     display: none;
+}
+
+.header-top.stiky {
+    position: fixed;
+    top: 0;
+    transition: var(--trans-1);
 }
 
 
