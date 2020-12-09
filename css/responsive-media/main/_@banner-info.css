@@ -7,6 +7,9 @@
 }
 
 @media only screen and (min-width: 375px) and (max-width: 992px) {
+    .banner-info {
+        margin-top: 200px;
+    }
     .card-msg {
         font-size: 2em;
         text-align: center;

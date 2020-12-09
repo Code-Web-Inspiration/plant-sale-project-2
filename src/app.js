@@ -14,30 +14,31 @@ const handleScrollY = function () {
     return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop
 }
 
-function navbarStiky() {
-    navBar.classList.toggle('stiky', window.scrollY && handleScrollY() > navbarHeight)
+// const navbarStiky = function () {
+//     navBar.classList.toggle('stiky', window.scrollY && handleScrollY() > navbarHeight)
+// }
+
+const clickMenu = function (element) {
+    switch (element.children[0].className) {
+        case 'web-site-menu-open-btn-component':
+            element.children[0].className = 'web-site-menu-close-btn-component'
+            navbarSlide.classList.add('slide')
+            break;
+        case 'web-site-menu-close-btn-component':
+            element.children[0].className = 'web-site-menu-open-btn-component'
+            navbarSlide.classList.remove('slide')
+            break;
+
+        default:
+            element.children[0].className = 'web-site-menu-open-btn-component'
+            break;
+    }
 }
 
 window.onload = () => {
 
-    window.addEventListener('scroll', ()=> navbarStiky())
+    // window.addEventListener('scroll', ()=> navbarStiky())
     menuButton.addEventListener('click', function () {
-
-        console.log(navbarSlide.className)
-
-        switch (this.children[0].className) {
-            case 'web-site-menu-open-btn-component':
-                this.children[0].className = 'web-site-menu-close-btn-component'
-                navbarSlide.classList.add('slide')
-                break;
-            case 'web-site-menu-close-btn-component':
-                this.children[0].className = 'web-site-menu-open-btn-component'
-                navbarSlide.classList.remove('slide')
-                break;
-        
-            default:
-                this.children[0].className = 'web-site-menu-open-btn-component'
-                break;
-        }
+        return clickMenu(this)
     }) 
 }

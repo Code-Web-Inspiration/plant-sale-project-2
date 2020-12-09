@@ -1,9 +1,11 @@
 /* === HEADER MEDIA === */
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .header {
+        min-height: 80vh;
+    }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
     .header-content-box {
         top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%);
     }
 }
@@ -17,6 +19,13 @@
     .header-see-our-plants-btn {
         margin-left: 60px;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        min-height: 90vh;
+    }
+    
 }
 
 @media only screen and (min-width: 280px) and (max-width: 768px),
@@ -98,6 +107,9 @@
 }
 
 @media only screen and (max-width: 550px) {
+    .header {
+        min-height: 100vh;
+    }
 
     .header-top .web-site-wrap:nth-of-type(1) .web-site-social-network-box-component {
         display: none;
