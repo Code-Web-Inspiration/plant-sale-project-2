@@ -74,12 +74,15 @@
 
 
 /* === SOCIAL NETWORK === */
+.web-site-social-network-box-component {
+    color: var(--white-color);
+}
 .web-site-social-network-link:link,
 .web-site-social-network-link:active {
     padding: .5em 1em;
     font-weight: 700;
     font-size: .8em;
-    color: var(--bg-color);
+    color: inherit;
     text-transform: uppercase;
     transition: var(--trans-03);
 }
@@ -110,8 +113,8 @@
 /* === LOGO === */
 .web-site-logo {
     position: relative;
-    height: 80px;
-    width: 130px;
+    height: 60px;
+    width: 100px;
 }
 
 
@@ -191,4 +194,9 @@
 .best-sellers .article-btn-read-more.is-active {
     color: var(--dark-color);
     background-color: transparent;
+}
+
+
+.b {
+    border: 2px solid var(--dark-color);
 }

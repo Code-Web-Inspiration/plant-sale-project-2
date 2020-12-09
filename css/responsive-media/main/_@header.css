@@ -1,58 +1,151 @@
 /* === HEADER MEDIA === */
 
-@media only screen and (min-width: 375px) and (max-width: 768px) {
-    .header .web-site-wrap {
-        align-items: stretch;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header-content-box {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-    .header-nav-list {
-        padding: 150px 0 50px;
-        padding-left: 2em;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 992px) {
+    .header-content-baseline {
+        width: 90%;
+        margin-left: auto;
+    }
+
+    .header-see-our-plants-btn {
+        margin-left: 60px;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 768px),
+        only screen and (max-width: 280px) {
+
+    .header-top {
+        position: relative;
+        width: 100%;
+        min-height: 100px; 
+    }
+
+    .header-top .web-site-wrap:nth-of-type(1) {
+        justify-content: center;
+    }
+
+    .header-top .web-site-wrap:nth-of-type(2) {
+        grid-template-columns: 80%;
         flex-flow: column wrap;
+    }
+
+    .header-top .web-site-wrap:nth-of-type(2) .web-site-social-network-box-component {
+        display: flex;
+        flex-flow: column wrap;
+        color: var(--dark-color);
+        margin-left: auto;
+    }
+
+    .header-top .web-site-wrap:nth-of-type(2) .web-site-social-network-link {
+        margin: 8px 0;
+    }
+
+    .header-nav-list {
+        flex-direction: column;
         align-items: flex-start;
 
         position: absolute;
-        width: 600px;
-        height: auto;
         top: 0;
-        left: -100%;
+        left: -15px;
+        transform: translateX(-100%);
         transition: var(--trans-1);
-        background-color: var(--dark-color);
-        z-index: 1;
+        transform-origin: left;
 
+        padding: 120px 2em 50px;
+        width: 60%;
+        background-color: var(--bg-color);
+
+        z-index: 1;
     }
 
     ul.slide {
         position: absolute;
         top: 0;
         left: -15px;
+        transform: translateX(0);
         transition: var(--trans-1);
+        transform-origin: left;
     }
 
-    .header-nav-link {
-        margin: .3em 0;
+    .header-nav-list .user-profil-box {
+        display: block;
     }
 
-    .header .web-site-wrap:last-child {
-        left: 10%;
+    .settings .user-profil-box,
+    .settings .setting-btn {
+        display: none;
     }
 
-    .header-baseline {
-        font-size: 5.5em;
-        line-height: 1.1;
+    .header-nav-link:link,
+    .header-nav-link:visited{
+        padding: 1rem 0;
+        font-size: 1.0rem;
+        color: var(--dark-color);
     }
 
     .menu-button {
         display: block;
     }
+
 }
 
-@media only screen and (max-width: 375px)  {
-    .header-nav-list {
-        width: 300px;
+@media only screen and (max-width: 550px) {
+
+    .header-top .web-site-wrap:nth-of-type(1) .web-site-social-network-box-component {
+        display: none;
     }
 
-    .header-baseline {
-        font-size: 3.5em;
+    .vertical-bar {
+        margin-left: auto;
     }
-    
+
+    .header-nav-list {
+        width: 80%;
+    }
+
+    .header-content-box {
+        transform: translate(-50%, 150px);
+    }
+
+
+    .header-content-box .web-site-wrap {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .header-content-box .baseline-box {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+        margin-bottom: 50px;
+    }
+
+    .header-content-box .header-content-img-box {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    .header-content-baseline {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .header-see-our-plants-btn {
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 280px) {
+
+    .header-content-baseline {
+        font-size: 40px;
+    }
 }

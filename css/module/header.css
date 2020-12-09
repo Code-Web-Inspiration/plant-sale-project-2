@@ -1,10 +1,17 @@
 .header {
-    min-height: 100vh; 
-    padding-bottom: calc(110% - 100vh);
-    background-color: var(--bg-color);
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+    min-height: 100vh;
+    z-index: 0;
 }
 
-.header .header-top {
+.header .web-site-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.header-top {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,25 +27,27 @@
     "nav-bar"
     ;
     background-color: rgba(0, 0, 0, .8);
-
     z-index: 1000;
 }
 
-.header .web-site-wrap {
-    flex-flow: row wrap;
-    align-items: center;
-}
-
 #logo {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
     z-index: 1000;
 }
 
 
 /* === TOP NAV BAR === */
-.header-top .web-site-wrap:first-child {
+.header-top .web-site-wrap:nth-of-type(1) {
     grid-area: top-nav-bar;
     padding: 1rem 0;
+    flex-flow: row wrap;
     justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    color: var(--white-color);
 }
 
 .vertical-bar {
@@ -51,27 +60,31 @@
 
 .contact-link:link {
     padding: .5em 1em;
-    border-radius: 20px;
+    border-radius: 3px;
     font-size: .8em;
     font-weight: 600;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: inherit;
     transition: var(--trans-03);
 }
 .contact-link:hover,
 .contact-link:active,
 .contact-link.is-active {
-    letter-spacing: 1px;
     background-color: var(--green-color);
 }
 
 
 /* === HEADER NAV BAR === */
-.header-top .web-site-wrap:last-child {
+.header-top .web-site-wrap:nth-of-type(2) {
     grid-area: nav-bar;
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
+    padding: 30px 0;
+}
+
+.header-top .web-site-wrap:nth-of-type(2) .web-site-social-network-box-component {
+    display: none;
 }
 
 .header-nav-bar {
@@ -84,13 +97,23 @@
     align-items: center;
 }
 
+.header-nav-list .user-profil-box {
+    display: none;
+}
+
 .header-nav-link:link,
- .header-nav-link:visited{
+.header-nav-link:visited{
     padding: .5em 1.5em;
     font-family: var(--head-police);
-    font-size: .9em;
+    font-size: .7em;
     font-weight: 700;
     text-transform: uppercase;
+    color: var(--white-color);
+    transition: var(--trans-03);
+}
+
+.header-nav-link:hover,
+.header-nav-link:active {
     color: var(--green-color);
 }
 
@@ -102,6 +125,10 @@
 }
 
 .settings {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -115,65 +142,67 @@
 
 .setting-btn .setting {
     display: inline-block;
-    height: 5px;
-    width: 5px;
+    height: 3px;
+    width: 3px;
     border-radius: 50%;
     background-color: var(--white-color);
 }
+
 .menu-button {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
+    margin-left: 1rem;
     display: none;
 }
 
 
 /* === HEADER CONTENT === */
 
-.header .header-content-box {
+.header-content-box {
     position: absolute;
-    top: 50%;
     left: 50%;
     width: 100%;
-    transform: translate(-50%, -50%);
-    padding-top: 200px;
+    transform: translate(-50%, 230px);
 }
-
-/* .header-content-box .web-site-container {
-    position: relative;
-} */
 
 .header-content-box .web-site-wrap {
-    
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 400px;
     grid-template-rows: auto;
     align-items: center;
-    align-self: center;
     justify-content: center;
+    position: relative;
+    z-index: 100;
 }
+
+.header-content-box .baseline-box {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.header-content-box .header-content-img-box {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
 .header-content-baseline {
     font-family: var(--head-police);
-    font-size: 60px;
+    font-size: 70px;
     color: var(--dark-color);
     line-height: 1;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .header-content-baseline span {
     font-size: 1.2em;
     text-transform: uppercase;
     color: var(--green-color);
-    line-height: 1;
 }
 
 .header-see-our-plants-btn {
     position: relative;
-    padding: .5em 1em;
-    border-radius: 5px;
-    text-transform: capitalize;
-    font-size: 1.1em;
+    padding: .8em;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 1.0em;
     font-weight: 700;
     text-align: center;
     color: var(--white-color);
@@ -182,12 +211,12 @@
     z-index: 1000;
 }
 
-.header-content-img-box {
-    width: 80%;
-    margin-left: auto;
+.header-see-our-plants-btn:hover {
+    letter-spacing: 1px;
 }
 
-
-
-
-
+.header-content-img-box {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}

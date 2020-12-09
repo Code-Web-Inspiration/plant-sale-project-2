@@ -19,6 +19,9 @@ const handleScrollY = function () {
 
 window.onload = () => {
     menuButton.addEventListener('click', function () {
+
+        console.log(navbarSlide.className)
+
         switch (this.children[0].className) {
             case 'web-site-menu-open-btn-component':
                 this.children[0].className = 'web-site-menu-close-btn-component'
