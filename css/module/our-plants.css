@@ -1,7 +1,9 @@
 .our-plants {
-    position: absolute;
+    position: relative;
+    margin-top: 200px;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
 }
 
 .our-plants-heading {
@@ -52,4 +54,3 @@
     grid-column:  3 / span 1;
     background: url('../image/nos_plantes/6.jpg') center center / cover no-repeat;
 }
-

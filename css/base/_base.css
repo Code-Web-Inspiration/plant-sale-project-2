@@ -72,7 +72,13 @@ img {
 }
 
 
-
+.all-see {
+    display: block;
+    width: 150px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 40px auto;
+}
 
 
 

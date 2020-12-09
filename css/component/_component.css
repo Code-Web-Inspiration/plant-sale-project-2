@@ -179,18 +179,18 @@
     color: var(--green-color);
 }
 
-.web-site-card-article-read-more-component:link,
-.web-site-card-article-read-more-component:visited {
+.web-site-article-read-more-component:link,
+.web-site-article-read-more-component:visited {
     padding: .5em 1em;
     border: 1px solid var(--green-color);
-    border-radius: 10px;
-    font-weight: 700;
+    border-radius: 5px;
+    font-size: 1.1em;
     color: var(--white-color);
     background-color: var(--green-color);
     transition: var(--trans-05);
 }
 
-.web-site-card-article-read-more-component:hover,
+.web-site-article-read-more-component:hover,
 .best-sellers .article-btn-read-more.is-active {
     color: var(--dark-color);
     background-color: transparent;
