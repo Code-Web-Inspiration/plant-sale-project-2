@@ -1,81 +1,8 @@
 /* --- COMPONENT STYLE --- */
 
-
-/* ==== MENU BUTTON ==== */
-.web-site-menu-btn-parent-component,
-.web-site-menu-btn-parent-component {
-    height: auto;
-    width: auto;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-
-
-.web-site-menu-open-btn-component {
-    position: relative;
-    display: block;
-    width: 40px;
-    height: 4px;
-    border-radius: 4px;
-    background-color: var(--web-site-menu-btn-color);
-}
-.web-site-menu-open-btn-component::before {
-    top: -10px;
-    left: 0;
-    width: 100%;
-}
-.web-site-menu-open-btn-component::after {
-    top: 10px;
-    right: 0;
-    width: 80%;
-}
-.web-site-menu-open-btn-component::before,
-.web-site-menu-open-btn-component::after {
-    position: absolute;
-    height: 100%;
-    content: '';
-    background-color: inherit;
-    border-radius: inherit;
-    transition: transform var(--trans-05);
-}
-
-
-/* ==== CLOSE BUTTON ==== */
-.web-site-menu-close-btn-component {
-    position: relative;
-    display: block;
-    width: 40px;
-    height: 4px;
-}
-.web-site-menu-close-btn-component::before,
-.web-site-menu-close-btn-component::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    display: block;
-    background-color: var(--web-site-menu-btn-color);
-    transform: rotate(45deg);
-    transition: transform var(--trans-05);
-}
-.web-site-menu-close-btn-component::after {
-    transform: rotate(-45deg);
-}
-
-
-
 /* === SOCIAL NETWORK === */
 .web-site-social-network-box-component {
-    color: var(--white-color);
+    color: var(--white);
 }
 .web-site-social-network-link:link,
 .web-site-social-network-link:active {
@@ -121,7 +48,6 @@
 
 /* === SECTION HEADING === */
 .web-site-section-heading-component {
-    font-family: var(--head-police);
     font-size: 3em;
     font-weight: 700;
     color: var(--dark-color);
@@ -136,7 +62,7 @@
     border-radius: 5px;
     margin-top: 5px;
     font-size: 2.5em;
-    background-color: var(--green-color);
+    background-color: var(--green);
 }
 
 
@@ -176,27 +102,27 @@
     display: block;
     margin-top: 5px;
     font-size: .8em;
-    color: var(--green-color);
+    color: var(--green);
 }
 
 .web-site-article-read-more-component:link,
 .web-site-article-read-more-component:visited {
     padding: .5em 1em;
-    border: 1px solid var(--green-color);
+    border: 1px solid var(--green);
     border-radius: 5px;
     font-size: 1.1em;
-    color: var(--white-color);
-    background-color: var(--green-color);
+    color: var(--white);
+    background-color: var(--green);
     transition: var(--trans-05);
 }
 
 .web-site-article-read-more-component:hover,
 .best-sellers .article-btn-read-more.is-active {
-    color: var(--dark-color);
+    color: var(--dark);
     background-color: transparent;
 }
 
 
 .b {
-    border: 2px solid var(--dark-color);
+    border: 2px solid var(--dark);
 }

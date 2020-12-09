@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    background-color: var(--white-color);
+    background-color: var(--white);
 }
 
 .card {
@@ -25,8 +25,8 @@
 }
 
 .card:nth-child(2) {
-    border-left: 1px solid var(--bg-color);
-    border-right: 1px solid var(--bg-color);
+    border-left: 1px solid var(--bg);
+    border-right: 1px solid var(--bg);
 }
 
 .card-img-box {

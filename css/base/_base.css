@@ -10,8 +10,10 @@
 
     /* === FONT SIZE === */
 
-    /* === FONT POLICE === */
-    --head-police: 'Tenor Sans', sans-serif;
+    /* === FONT POLICE === */ 
+    /* --tenor: 'Tenor Sans', sans-serif; */
+    --tenor: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --gill: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     /* === TRANSITION === */
     --trans-03: .3s ease;
@@ -19,11 +21,16 @@
     --trans-1: 1s ease;
 
     /* === COLOR === */
+    --dark: #111;
+    --green: #61b15a;
+    --white: #fff;
+    --bg: #eee;
+
     --web-site-menu-btn-color: var(--dark-color);
-    --dark-color: #111;
+     --dark-color: #111;
     --white-color: #fff;
     --green-color: #61b15a;
-    --bg-color: #eee;
+    
 
     /* === LINE HEIGHT === */
     --l-height: 1;
@@ -34,12 +41,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--head-police);
+    font-family: var(--tenor);
 }
 
 html, body {
-    color: var(--dark-color);
-    background-color: var(--bg-color);
+    color: var(--dark);
+    background-color: var(--bg);
     text-rendering: optimizeLegibility;
 }
 
@@ -50,7 +57,7 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--head-police);
+    font-family: var(--tenor);
     line-height: var(--l-height);
 }
 

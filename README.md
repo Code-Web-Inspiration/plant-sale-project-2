@@ -11,6 +11,8 @@ Cette page comporte cing (5) section à savoir:
 
     - La section our plants
 
+    - La section testimony
+
     - La section footer 
 
 Il s'agit d'une mise à jours de la première version.

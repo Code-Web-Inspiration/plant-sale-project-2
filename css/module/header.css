@@ -17,6 +17,7 @@
     right: 0;
     width: 100%;
     padding: 30px 0;
+    margin: 0 auto;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -25,7 +26,7 @@
     "top-nav-bar"
     "nav-bar"
     ;
-    background-color: var(--dark-color);
+    background-color: var(--dark);
     transition: var(--trans-1);
     z-index: 10000;
 }
@@ -47,7 +48,7 @@
     justify-content: flex-end;
     align-items: center;
     margin: 0 auto;
-    color: var(--white-color);
+    color: var(--white);
 }
 
 .vertical-bar {
@@ -55,7 +56,7 @@
     width: 2px;
     height: 30px;
     margin: 0 5px;
-    background-color: var(--green-color);
+    background-color: var(--green);
 }
 
 .contact-link:link {
@@ -70,7 +71,7 @@
 .contact-link:hover,
 .contact-link:active,
 .contact-link.is-active {
-    background-color: var(--green-color);
+    background-color: var(--green);
 }
 
 
@@ -104,24 +105,24 @@
 .header-nav-link:link,
 .header-nav-link:visited{
     padding: .5em 1.5em;
-    font-family: var(--head-police);
+    font-family: var(--tenor);
     font-size: .7em;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: var(--white);
     transition: var(--trans-03);
 }
 
 .header-nav-link:hover,
 .header-nav-link:active {
-    color: var(--green-color);
+    color: var(--green);
 }
 
 .user-profil-box {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-color: var(--white-color);
+    background-color: var(--white);
 }
 
 .settings {
@@ -145,11 +146,18 @@
     height: 3px;
     width: 3px;
     border-radius: 50%;
-    background-color: var(--white-color);
+    background-color: var(--white);
 }
 
 .menu-button {
+    height: 35px;
+    width: 40px;
+    border: none;
+    box-shadow: none;
+    outline: none;
     margin-left: 1rem;
+    background-color: transparent;
+    cursor: pointer;
     display: none;
 }
 
@@ -191,9 +199,9 @@
 }
 
 .header-content-baseline {
-    font-family: var(--head-police);
-    font-size: 70px;
-    color: var(--dark-color);
+    font-family: var(--tenor);
+    font-size: 60px;
+    color: var(--dark);
     line-height: 1;
     margin-bottom: 30px;
 }
@@ -201,7 +209,7 @@
 .header-content-baseline span {
     font-size: 1.2em;
     text-transform: uppercase;
-    color: var(--green-color);
+    color: var(--green);
 }
 
 .header-see-our-plants-btn {
@@ -212,8 +220,8 @@
     font-size: 1.0em;
     font-weight: 700;
     text-align: center;
-    color: var(--white-color);
-    background-color: var(--green-color);
+    color: var(--white);
+    background-color: var(--green);
     transition: var(--trans-03);
     z-index: 1000;
 }
