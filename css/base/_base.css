@@ -51,8 +51,9 @@ html, body {
 }
 
 section {
+    position: relative;
     width: 100%;
-    margin-bottom: 100px;
+    margin: 150px 0 100px;
     z-index: 0;
 }
 
@@ -85,6 +86,22 @@ img {
     letter-spacing: 2px;
     text-align: center;
     margin: 40px auto;
+}
+
+.contact-link:link {
+    padding: .5em 1em;
+    border-radius: 3px;
+    font-size: .8em;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: var(--green);
+    color: inherit;
+    transition: var(--trans-03);
+}
+.contact-link:hover,
+.contact-link:active,
+.contact-link.is-active {
+    background-color: var(--green);
 }
 
 

@@ -10,20 +10,14 @@
     }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 992px) {
-    .header-content-baseline {
-        width: 90%;
-        margin-left: auto;
-    }
-
-    .header-see-our-plants-btn {
-        margin-left: 60px;
-    }
-}
-
 @media only screen and (max-width: 768px) {
     .header {
         min-height: 90vh;
+    }
+
+    .header-content-box .web-site-wrap {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
     }
     
 }
@@ -119,8 +113,14 @@
         margin-left: auto;
     }
 
+    .menu-button {
+        height: 25px;
+        width: 30px;
+    }
+
+
     .header-nav-list {
-        width: 80%;
+        width: 85%;
     }
 
     .header-content-box {
@@ -144,18 +144,13 @@
         grid-column: 1 / span 1;
     }
 
-    .header-content-baseline {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .header-see-our-plants-btn {
-        margin-left: 0;
-    }
-
 }
 
 @media only screen and (max-width: 280px) {
+
+    .logo {
+        font-size: 2em;
+    }
 
     .header-content-baseline {
         font-size: 40px;

@@ -1,0 +1,15 @@
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+    
+        .contact .web-site-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-column-gap: 20px;
+        align-items: center;
+    }
+
+    .contact-content-text {
+        text-align: center;
+    }
+
+}

@@ -16,7 +16,6 @@
     left: 0;
     right: 0;
     width: 100%;
-    padding: 30px 0;
     margin: 0 auto;
 
     display: grid;
@@ -31,12 +30,16 @@
     z-index: 10000;
 }
 
-#logo {
+.logo {
     position: absolute;
     top: 50%;
     left: 1rem;
+    font-size: 3em;
+    font-weight: 500;
+    color: var(--green);
     transform: translateY(-50%);
     z-index: 1000;
+
 }
 
 
@@ -55,25 +58,9 @@
     display: block;
     width: 2px;
     height: 30px;
-    margin: 0 5px;
+    margin: 0 1rem;
     background-color: var(--green);
 }
-
-.contact-link:link {
-    padding: .5em 1em;
-    border-radius: 3px;
-    font-size: .8em;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: inherit;
-    transition: var(--trans-03);
-}
-.contact-link:hover,
-.contact-link:active,
-.contact-link.is-active {
-    background-color: var(--green);
-}
-
 
 /* === HEADER NAV BAR === */
 .header-top .web-site-wrap:nth-of-type(2) {
@@ -180,11 +167,12 @@
 
 .header-content-box .web-site-wrap {
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: repeat(2, 500px);
     grid-template-rows: auto;
     align-items: center;
     justify-content: center;
     position: relative;
+    margin: 0 auto;
     z-index: 100;
 }
 
@@ -202,14 +190,15 @@
     font-family: var(--tenor);
     font-size: 60px;
     color: var(--dark);
-    line-height: 1;
     margin-bottom: 30px;
 }
 
 .header-content-baseline span {
-    font-size: 1.2em;
-    text-transform: uppercase;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 500;
     color: var(--green);
+    margin-bottom: 40px;
 }
 
 .header-see-our-plants-btn {
@@ -233,5 +222,5 @@
 .header-content-img-box {
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    margin-left: auto;
 }

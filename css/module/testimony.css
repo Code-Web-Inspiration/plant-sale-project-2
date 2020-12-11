@@ -1,7 +1,4 @@
 /* === TESTIMONY STYLE === */
-.testimony {
-    margin-top: 200px;
-}
 
 .testimony-heading {
     margin-bottom: 50px;
@@ -23,12 +20,14 @@
 .testimony .web-site-wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(400px, auto);
+    grid-template-rows: minmax(300px, auto);
     grid-template-areas:
         "t-card1 t-card2 t-card3" 
     ;
     grid-column-gap: 20px;
-    align-items: center;
+    align-items: stretch;
+
+    margin: 0 auto;
 }
 
 .testimony-card {
@@ -67,6 +66,7 @@
 .testimony .card-content-text {
     margin-bottom: 30px;
     font-size: 1.1em;
+    line-height: 1.5;
     font-family: var(--gill);
     text-align: left;
 }
@@ -81,5 +81,4 @@
     font-family: var(--tenor);
     font-size: .9em;
     letter-spacing: 2px;
-
 }
