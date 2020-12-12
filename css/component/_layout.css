@@ -1,0 +1,16 @@
+/* --- GRID STYLE --- */
+
+.container {
+  max-width: calc(100vw - var(--pd-container));
+  width: 100%;
+  padding: 0 var(--pd-container);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid,
+.wrap {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
