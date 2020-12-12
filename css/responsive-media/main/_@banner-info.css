@@ -1,6 +1,9 @@
 /* === BANNER INFO RESPONSIVE === */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .banner-info {
+        margin-top: 0;
+    }
     .card {
         flex-direction: column;
     }

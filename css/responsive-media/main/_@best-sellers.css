@@ -14,12 +14,11 @@
 
 @media only screen and (min-width: 375px) and (max-width: 550px) {
     .best-sellers {
-        margin-top: 700px;
+        margin-top: 500px;
     }
 }
 
 @media only screen and (max-width: 375px) {
-
     .best-sellers .web-site-wrap {
         grid-template-rows: repeat(4, minmax(400px, auto));
         grid-template-columns: repeat(1, 1fr);

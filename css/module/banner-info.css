@@ -9,27 +9,24 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    background-color: var(--white);
+    grid-column-gap: 100px;
 }
 
 .card {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px 0;
-}
-
-.card:nth-child(2) {
-    border-left: 1px solid var(--bg);
-    border-right: 1px solid var(--bg);
+    color: var(--green);
+    box-shadow: 0 0 2em var(--dark), 0 0 1.5em var(--white);
 }
 
 .card-img-box {
     width: 70px;
     height: 70px;
-    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .banner-info-card-img {

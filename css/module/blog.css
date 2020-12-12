@@ -1,0 +1,71 @@
+.blog-heading {
+    margin-bottom: 40px;
+}
+
+.blog .web-site-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(400px, auto));
+    grid-template-areas: 
+    "article1"
+    "article2"
+    ;
+    grid-row-gap: 100px;
+    margin: 0 auto;
+}
+
+.blog .article-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(500px, auto));
+    grid-template-rows: 400px;
+    grid-column-gap: 50px;
+    width: 100%;
+}
+
+.blog .article-body {
+    padding: 1rem;
+}
+
+.blog .article-header {
+    position: relative;
+    padding-left: 70px;
+}
+
+.owner-profil-box {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 55px;
+    width: 55px;
+    border: 3px solid var(--dark);
+    border-radius: 50%;
+}
+
+.blog .owner-profil {
+    border-radius: 50%;
+}
+
+.blog .owner-name {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.blog .article-title {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.blog .article-desc {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 30px 0;
+}
+
+.article-btn-more {
+    text-transform: capitalize;
+}
+
+.blog .all-see {
+    width: 200px;
+}
